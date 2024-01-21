@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      .carousel .item {
+        width: 100%;
+          height: 300px;
+      }
+
+       img {
+        object-fit: cover;
+        height: 100%;
+    }
+      .de{
+        width: 30%;
+      }
+      .pw{
+        height: 150px;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <nav >
+            <div class="bar btn btn-primary text-light rounded-1">Home</div>
+            <div class="bar btn btn-light text-primary rounded-1">About</div>
+            <div class="bar btn btn-light text-primary rounded-1">Blog</div>
+            <div class="bar btn btn-light text-primary rounded-1">Contact</div>
+        </nav>
+        
+        <div id="carouselExampleIndicators" class="carousel slide my-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner sl2">
+              <div class="carousel-item item active">
+                
+                <img src="https://www.rxwallpaper.site/wp-content/uploads/ocean-beach-boats-seascapes-wallpapers.jpg" class="d-block  w-100" alt="...">
+                <div class="carousel-caption">
+                  <h3>Slide 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eius.</p>
+                </div>
+              </div>
+              <div class="carousel-item item">
+                <img src="https://www.rxwallpaper.site/wp-content/uploads/ocean-beach-boats-seascapes-wallpapers.jpg" class="d-block  w-100" alt="...">
+                <div class="carousel-caption">
+                  <h3>Slide 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eius.</p>
+                </div>
+              </div>
+              <div class="carousel-item item">
+                <img src="https://www.rxwallpaper.site/wp-content/uploads/ocean-beach-boats-seascapes-wallpapers.jpg" class="d-block  w-100" alt="...">
+                <div class="carousel-caption">
+                  <h3>Slide 3</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eius.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- <div>           -->
+          <div class="d-flex justify-content-between">
+            <div class="de">
+              <div class="fs-4 fw-semibold">Bootstrap</div>
+              <p class="pw">Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website. It is absolutely free to download and use. It is a front-end framework used for easier and faster web development.</p>
+              <div class="btn btn-primary text-light">More</div>
+            </div>
+            <div class="de">
+              <div class="fs-4 fw-semibold">Templates</div>
+              <p class="pw">A template is a file that serves as a starting point for a new document. Templates contain placeholder fields you can fill in and professionally-designed styles and layouts. Word processors, presentation programs, desktop publishing programs, and some website hosts often include template galleries you can browse when creating a new file.</p>
+              <div class="btn btn-primary text-light">More</div>
+            </div>
+            <div class="de">
+              <div class="fs-4 fw-semibold">Blog</div>
+              <p class="pw">A blog (a truncation of "weblog") is an informational website consisting of discrete, often informal diary-style text entries (posts). Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page.</p>
+              <div class="btn btn-primary text-light">More</div>
+            </div>
+          </div>
+        <!-- </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
